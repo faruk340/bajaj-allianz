@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./form_data.css" />
+    <link rel="stylesheet" href="./index2.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js"
+      integrity="sha512-vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>pdf</title>
+    <!-- <style type="text/css" media="print">
+      @media print {
+        @page {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        body {
+          padding-top: 72px;
+          padding-bottom: 72px;
+        }
+      }
+    </style> -->
+  </head>
+  <body id="download">
+    <div id="whole_page">
+      <div class="pdf-header js-scroll">
+        <i class="fa-solid fa-print" onclick="my_pdf()"></i>
+        <i class="fa-solid fa-download" onclick="download()"></i>
+      </div>
+      <div class="container" id="element-to-print">
+        <div class="border-color">
+          <div class="pdf-header-img">
+            <div class="hdfc">
+              <h1>Bajaj Allianz General Insurance Company Limited</h1>
+            </div>
+            <div class="logo">
+              <img src="./images/bajajlogo.png" alt="bajaj-logo" />
+            </div>
+          </div>
+          <div class="content">
+            <h1>Dear <span id="Producer_Name"></span>,</h1>
+            <p style="padding-bottom: 1em">
+              <!-- Thank you for approaching HDFC ERGO for your
+              <b><span id="quotatuion_Worksheet"></span></b> Insurance. Please
+              find quotation for your vehicle's insurance as mentioned below.
+              Kindly note your premium amount for Motor Insurance is ₹
+              <b id="total_Premium_Two"></b> -->
+              We thank you for the opportunities to quote for your Insurance
+              needs. We are one of India's leading general insurance companies
+              with iAAA rating from ICRA for the last ten consecutive years
+              indicating the company's high claims paying ability and
+              fundamentally strong position in the industry. Please be assured
+              that you have made the right choice by choosing us and we will
+              stand by you in your hour of need. We take this opportunity to and
+              also reform our commitment to delivering excellent services to
+              you. We specialize in auto insurance sales and have the best rates
+              around. Some insurance companies may add extra coverage that the
+              consumer doesn’t need. For example, a person who doesn’t have a
+              swimming pool doesn’t need coverage for accidents in the pool
+              area. Let us take care of all your vehicle insurance needs and you
+              can focus on more important things like family, friends, and
+              work!
+              <p><b>We assure you the best of our
+                services and look forward to a continual patronage and association
+                with you.</b></p>
+            </p>
+          </div>
+          <!-- <hr style="border: 1px solid #0071bb" /> -->
+          <table class="table-2">
+            <!-- <tr>
+              <td
+                style="
+                  border: 1px solid #0071bb;
+                  background-color: #0071bb;
+                  text-align: center;
+                  color: #fff;
+                "
+                colspan="2"
+              >
+                Vehicle Details
+              </td>
+            </tr> -->
+            <!-- =============================================================================================== -->
+            <div class="bannerHeads">
+              <!-- <h1>Motor Insurance</h1> -->
+            </div>
+            <div class="bajaj_container">
+              <div class="stillImgBanner">
+                <div class="introInBannerL">
+                  <img
+                    src="./images/motor-insurance-online-policy.webp"
+                    alt="Vehicle Insurance Online"
+                    title="Motor Insurance Online | Bajaj Allianz"
+                  />
+                </div>
+                <div class="introInBannerR">
+                  <div class="introWithReadMore">
+                    <a
+                      href="javascript:;"
+                      class="introWithReadHide banner-intro-less"
+                      >Read less</a
+                    >
+                  </div>
+                </div>
+                <!-- ============================= -->
+                <div class="insurerFeatures disCTAContent">
+                  <div class="features">
+                    <div class="block clearfix">
+                      <span style="padding: 10px">
+                        <img src="./images/24x7-roadside-assistance.webp" />
+                      </span>
+                      <div class="text">
+                        <p><span>24x7 Roadside Assistance</span></p>
+
+                        <!--<span>Cashless treatment at </span>
+                                6500 + network hospitals -->
+                      </div>
+                    </div>
+
+                    <div class="block clearfix">
+                      <span style="padding: 10px">
+                        <img src="./images/feature-claim-settlementy.png" />
+                      </span>
+                      <div class="text">
+                        <p><span>On the Spot Claim settlements</span></p>
+
+                        <!--<span>In-house </span>
+                                health administration team -->
+                      </div>
+                    </div>
+
+                    <div class="block clearfix">
+                      <span style="padding: 10px">
+                        <img
+                          src="./images/hassle-free-claim-settlements.webp"
+                        />
+                      </span>
+                      <div class="text">
+                        <p><span>Hassle free claim settlements</span></p>
+
+                        <!--<span>Claim settlement </span>
+                                within 60 minutes -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Banner section Features start-->
+              <!-- Banner section Features end-->
+              <!-- side section Features start-->
+              <!-- side section Features start-->
+            </div>
+            <!-- <tr>
+                <td class="table-2-width"><b>Customer Name <span class="dot">:</span></b><span class="number"><span id="Producer_Code"></span></span></td>
+                <td><b>Quote Date <span class="dot">:</span></b><span class="number"><span id="Producer_Name"></span></span></td>
+              </tr>
+              <tr>
+                <td class="table-2-width"><b>Vehicle Number <span class="dot">:</span></b><span class="number"><span id="Producer_Contact"></span></td>
+                <td><b>Policy Plan  <span class="dot">:</span></b><span class="number"><span id="Policy_Plan"></span></td>
+              </tr> -->
+          </table>
+
+          <!-- ============================================================================================ -->
+          <div class="awards_section">
+            <div class="award_img">
+              <img src="./images/award.svg" alt="award" />
+            </div>
+            <div class="award_content">
+              <h1 style="color: #0071bb">
+                BAGIC won more than 100 Awards including Best Motor Insurance by
+                Money Today.
+              </h1>
+            </div>
+          </div>
+          <!-- =============================================================================== -->
+          <div class="otg-features-header">
+            <h1>Motor On-The-Spot Claim Settlement Benefits :</h1>
+          </div>
+          <div class="otg-features-section">
+            <div class="otg-img">
+              <img src="./images/Motor-ots2.png" alt="Motor-ots2" />
+            </div>
+            <div class="otg-content">
+              <ul>
+                <li>
+                  <span
+                    ><img
+                      src="./images/arrow-bullet-png-5.png"
+                      alt="bajaj hand" /></span
+                  >Settlement of claim up to ₹ 30,000 within 20 minutes easily,
+                  quickly and conveniently
+                </li>
+                <li>
+                  <span
+                    ><img
+                      src="./images/arrow-bullet-png-5.png"
+                      alt="bajaj hand" /></span
+                  >Hassel free settlement of claims before repair of your
+                  vehicle just by using your mobile phone
+                </li>
+                <li>
+                  <span
+                    ><img
+                      src="./images/arrow-bullet-png-5.png"
+                      alt="bajaj hand" /></span
+                  >Paperless car insurance claim process without submission of
+                  repair bills
+                </li>
+                <li>
+                  <span
+                    ><img
+                      src="./images/arrow-bullet-png-5.png"
+                      alt="bajaj hand" /></span
+                  >Receive claim amount directly in your bank account
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <table class="table-3">
+            <tr>
+              <td
+                style="
+                  border: 1px solid #0071bb;
+                  background-color: #0071bb;
+                  text-align: center;
+                  color: #fff;
+                "
+                colspan="6"
+              >
+                Vehicle Details
+              </td>
+              <!-- <td></td> -->
+            </tr>
+            <tr>
+              <th>Registration No.</th>
+              <th>Vehicle Make</th>
+              <th>Model & Variant</th>
+              <!-- <th>Registration Authority</th> -->
+              <th>Year of Manfufature</th>
+              <th>Cubic Capacity/Kilowatt</th>
+              <th>Fuel Type</th>
+            </tr>
+            <tr>
+              <td id="mode_lNumber"></td>
+              <td id="rto_Locatio"></td>
+              <td id="mfg_Year"></td>
+              <td id="registration_Date"></td>
+              <td id="cubic_Capacity"></td>
+              <!-- <td id="seating_Capacity"></td> -->
+              <td id="fuel_Type"></td>
+            </tr>
+            <tr>
+              <th>Policy Type</th>
+              <th>IDV of Vehicle</th>
+              <!-- <th>IDV of Trailer</th> -->
+              <th>CNG/LPG Kit IDV</th>
+              <th>IDV of Electrical Accessories</th>
+              <th>IDV of Non-Electrical Accessories</th>
+              <th>Total IDV</th>
+            </tr>
+            <tr>
+              <td id="Policy_Year"></td>
+              <td id="Idv_Vehicle"></td>
+              <!-- <td id="Idv_Trailer"></td> -->
+              <td id="LPG_Kit"></td>
+              <td id="Electrical_Accessories"></td>
+              <td id="NonElectrical_Accessories"></td>
+              <td id="Total_Idv"></td>
+            </tr>
+          </table>
+          <!-- <h1 class="table-4-heading">PREMIUM BREAK UP</h1> -->
+          <table class="table-4">
+            <tr style="background-color: #0071bb; color: #ffffff">
+              <th rowspan="2">Premium Description</th>
+              <!-- <td id="qt_Number"></td> -->
+            </tr>
+            <tr style="background-color: #0071bb; color: #ffffff">
+              <th id="plan" style="letter-spacing: 0.5px">Amount (₹)</th>
+            </tr>
+            <!-- <tr>
+              <th
+                colspan="2"
+                class="table-heading-margin"
+                style="background-color: #264a9f; color: #fff"
+              >
+                Section - I Own Damage (A)
+              </th>
+            </tr> -->
+            <!-- <tr>
+              <td style="text-align: left">
+                <b
+                  >Own Damage Premium
+                  <span id="N_cb"></span> as applicable</b>
+              </td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span>
+                <span id="OD_premium"></span>
+              </td>
+            </tr> -->
+            <tr>
+              <td style="text-align: left">
+                <b>Discounts on Own Damage Premium</b>
+              </td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span> <span id="Dis_counts"></span>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left">
+                <b>No Claim Bonus @ <span id="N_cb"></span></b>
+              </td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span>
+                <b><span id="No_claimbonus"></span></b>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left">
+                <b>TOTAL OWN DAMAGE PREMIUM </b>
+              </td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span>
+                <span id="Damage_Premium"></span>
+              </td>
+            </tr>
+            <!-- <tr>
+              <th
+                colspan="2"
+                class="table-heading-margin"
+                style="background-color: #264a9f; color: #fff"
+              >
+                Section - I ADD ON COVERS (C)
+              </th>
+            </tr> -->
+            <!-- <tr>
+              <td style="text-align: left">
+                <b
+                  >Total add on premium :
+                  <span id="plan_Two" style="color: #264a9f"></span
+                ></b>
+              </td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span
+                ><span id="Depreciation_Reimbursement"></span> <br />
+              </td>
+            </tr> -->
+            <!-- <tr>
+              <td style="text-align: left">
+                <b
+                  >Add : Emergency transport and hotel expenses (Any One Accident
+                  - ₹ 5000, Any One Year- ₹ 10000)
+                </b>
+              </td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span>
+                <span id="Emergency_transport"></span> <br />
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left">
+                <b
+                  >Add : Key Replacement (Sum Insured : ₹ 25000 Per Occurrence
+                  Limit 50% Of SI)</b
+                >
+              </td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span>
+                <span id="Key_Replacement"></span> <br />
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left">
+                <b>Add : Loss of personal belongings (Sum Insured : ₹ 10000) </b>
+              </td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span
+                ><span id="personal_belongings"></span> <br />
+              </td>
+            </tr> -->
+            <!-- <tr>
+                <td style="text-align: left">
+                  <b>Add : Repair of Glass, Rubber & Plastic Parts (TA 08)</b>
+                </td>
+                <td style="text-align: right">
+                  <span class="rupees-symbol">₹</span> <span id="RepairofGlass_Two"></span>
+                </td>
+              </tr>
+
+            <!-- ================================ -->
+            <!--   
+              <tr>
+                <td style="text-align: left">
+                  <b>Add : Engine Secure</b>
+                </td>
+                <td style="text-align: right">
+                  <span class="rupees-symbol">₹</span><span id="Engine_Secure"></span>
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <b>Add : Comsumables</b>
+                </td>
+                <td style="text-align: right">
+                  <span class="rupees-symbol">₹</span><span id="Com_sumables"></span>
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <b>Add : Return To Invoice</b>
+                </td>
+                <td style="text-align: right">
+                  <span class="rupees-symbol">₹</span><span id="Return_ToInvoice"></span>
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <b>Add : Tyre Secure</b>
+                </td>
+                <td style="text-align: right">
+                  <span class="rupees-symbol">₹</span><span id="Tyre_Secure"></span>
+                </td>
+              </tr>
+     -->
+
+            <tr>
+              <td style="text-align: left">
+                <b
+                  >Addon Coverage :
+                  <span id="Depreciation_ReImbursement"></span>
+                  <span id="Fiber_andRubber"></span>
+                  <span id="Emergency_transport"></span>
+                  <span id="Key_Replacement"></span>
+                  <span id="Loss_ofpersonal"></span>
+                  <span id="Engine_Secure"></span>
+                  <span id="Consumable_Expenses"></span>
+                  <span id="Tyre_Secure"></span>
+                  <span id="Return_ToInvoice"></span>
+                </b>
+              </td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span
+                ><span id="AddOn_Cover"></span>
+              </td>
+            </tr>
+            <!-- <tr>
+              <th
+                colspan="2"
+                class="table-heading-margin"
+                style="background-color: #264a9f; color: #fff"
+              >
+                Section - II Liability (B)
+              </th>
+            </tr> -->
+            <tr>
+              <td style="text-align: left">
+                <b>Basic Third Party Liability </b>
+              </td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span>
+                <span id="Basic_TPpremium"></span>
+              </td>
+              <!-- ================================== -->
+            </tr>
+            <tr>
+              <td style="text-align: left">
+                <b>PA Cover for Owner Driver</b>
+              </td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span>
+                <span id="PAtoOwner_Driver"></span>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><b>LL to Paid Driver </b></td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span>
+                <span id="LLtoPaid_Driver"></span>
+              </td>
+            </tr>
+            <!-- <tr>
+              <td style="text-align: left">
+                <b>LL to Employee Other Than Paid Driver</b>
+              </td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span>
+                <span id="LL_toEmployee"></span>
+              </td>
+            </tr> -->
+            <tr>
+              <td style="text-align: left"><b>Passenger Coverage</b></td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span>
+                <span id="Passenger_Coverage"></span>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left">
+                <b>CNG/LPG Kits</b>
+              </td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span><span id="cng_Lpg"></span>
+              </td>
+            </tr>
+            <!-- <tr>
+              <td style="text-align: left"><b>B: TOTAL LIABILITY PREMIUM </b></td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span>
+                <b><span id="total_Liability"></span></b>
+              </td>
+            </tr> -->
+            <!-- <tr>
+              <th
+                colspan="2"
+                class="table-heading-margin"
+                style="background-color: #264a9f; color: #fff"
+              >
+                Total Premium
+              </th>
+            </tr> -->
+            <tr>
+              <td style="text-align: left"><b>Net Premium</b></td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span>
+                <b><span id="net_Premium"></span></b>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><b>CGST+SGST/IGST </b></td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span>
+                <b><span id="CGST_IGST"></span></b>
+              </td>
+            </tr>
+            <!-- <tr>
+              <td style="text-align: left"><b>CGST</b></td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span>
+                <b><span id="C_gst"></span></b>
+              </td>
+            </tr> -->
+            <tr>
+              <td style="text-align: left"><b>Final Premium </b></td>
+              <td style="text-align: right">
+                <span class="rupees-symbol">₹</span>
+                <b><span id="total_Premium"></span></b>
+              </td>
+            </tr>
+          </table>
+          <!-- <table class="table-5">
+            <tr>
+              <th style="text-align: left">
+                Add-On Coverage :
+                <span id="dynamic_Data"></span>
+              </th>
+            </tr>   
+          </table> -->
+
+          <h3 class="table-6-heading">
+            This quotation is valid for 7 days from the date of quote generation. Vehicle Inspection may be required at the time of issuing the policy.
+          </h3>
+
+          <!-- <table class="table-5">
+            <tr>
+              <th style="text-align: left">
+                Note: This quotation is valid for 7 days from the date of quote generation subject to continuity up to the last date of previous year policy.
+              </th>
+            </tr>
+          </table> -->
+          <!-- <h1 class="table-6-heading" style="color: #264a9f">
+            Kindly pay Cheque/DD in favor of Tata AIG General Insurance Company
+            Limited.
+          </h1> -->
+          <!-- <h1
+            class="table-6-heading"
+            style="margin-bottom: -1em; font-size: 1.8rem; margin-top: 3em"
+          >
+            Documents Required:-
+          </h1>
+          <table class="table-6">
+            <tr>
+              <th colspan="2">1. Previous Policy Copy</th>
+            </tr>
+            <tr>
+              <th>2. RC copy</th>
+              >
+            </tr>
+          </table> -->
+
+          <!-- <div class="table-7">
+            <h1>Our Cashless Garage List</h1>
+            <span class="hand-symbol"
+              ><img src="./images/click.png" alt=""
+            /></span>
+            <a
+              href="https://www.tataaig.com/locator/cashless-car-network-garages"
+              target="_blank"
+              ><img src="./images/cas.png" alt="cas"
+            /></a>
+          </div> -->
+          <!-- ==============================================why-bajaj======================================== -->
+          <div class="why_bajaj_header">
+            <h1>Why Bajaj Allianz :</h1>
+          </div>
+          <div class="why_bajaj_section">
+            <div class="why_bajaj_box">
+              <div class="why_bajaj_img">
+                <img src="./images/bajaj_garage.svg" alt="" />
+              </div>
+              <div class="why_bajaj_content">
+                <p>6000+ Network Garages</p>
+              </div>
+            </div>
+            <div class="why_bajaj_box">
+              <div class="why_bajaj_img">
+                <img src="./images/bajaj_hospital.svg" alt="" />
+              </div>
+              <div class="why_bajaj_content">
+                <p>6500+ Network Hospitals</p>
+              </div>
+            </div>
+            <div class="why_bajaj_box">
+              <div class="why_bajaj_img">
+                <img src="./images/feature-claim-settlementy.png" alt="" />
+              </div>
+              <div class="why_bajaj_content">
+                <p>Claim Settlement Ratio : 98%</p>
+              </div>
+            </div>
+            <div class="why_bajaj_box">
+              <div class="why_bajaj_img">
+                <img src="./images/bajaj_combined.svg" alt="" />
+              </div>
+              <div class="why_bajaj_content">
+                <p>Combined Ratio : 97.6%</p>
+              </div>
+            </div>
+            <div class="why_bajaj_box">
+              <div class="why_bajaj_img">
+                <img src="./images/bajaj_solvency.svg" alt="" />
+              </div>
+              <div class="why_bajaj_content">
+                <p>Solvency Ratio : 280%</p>
+              </div>
+            </div>
+            <div class="why_bajaj_box">
+              <div class="why_bajaj_img">
+                <img src="./images/bajaj_spot.svg" alt="" />
+              </div>
+              <div class="why_bajaj_content">
+                <p>Motor On-The-Spot Claim</p>
+              </div>
+            </div>
+            <div class="why_bajaj_box">
+              <div class="why_bajaj_img">
+                <img src="./images/bajaj_award.svg" alt="" />
+              </div>
+              <div class="why_bajaj_content">
+                <p>More Than 100 Awards Won</p>
+              </div>
+            </div>
+            <div class="why_bajaj_box">
+              <div class="why_bajaj_img">
+                <img src="./images/bajaj_policy.svg" alt="" />
+              </div>
+              <div class="why_bajaj_content">
+                <p>5 Cr + Policies Sold</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==============================award_content====================== -->
+
+          <div class="awards_content">
+            <h1>Awards and Recognitions :</h1>
+            <p>
+              BAGIC won more than 100 Awards including Best Motor Insurance by
+              Money Today, four prestigious awards at Quantic's BFSI Excellence
+              Awards, Felicitated among the 50 Most Trusted BFSI Brands in India
+              , 'Excellence in Operations Automation' Award, Best Innovation in
+              Customer Experience - General Insurance-2021 Award at India's most
+              prestigious BFSI Tech Innovation Web Conference & Awards, Best in
+              Future of Work Award and much more.
+            </p>
+          </div>
+<!-- =================================bajaj-map================================ -->
+          <!-- <div class="bajaj_map_section">
+            <div class="map_img">
+              <img src="./images/Locate-a-dealer-mobile.jpg" alt="">
+              <button class="bajaj_map_btn"><a href="https://apps.bajajallianz.com/gmlocator/locate-garages.php">Bajaj Location Garage</a></button>
+            </div>
+          </div> -->
+          <div class="para-header">
+            <p class="quot">Quotation Date : <b id="Quote_Date"></b></p>
+            <!-- <p class="quot">Quotation No : <b id="qt_Number"></b></p> -->
+          </div>
+        </div>
+
+
+
+
+        <!-- ======================================================================================================= -->
+      </div>
+    </div>
+    <script src="./form_data.js"></script>
+  </body>
+</html>

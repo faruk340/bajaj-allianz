@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./form.css" />
+    <title>html-table</title>
+    <!-- ===========================Live-server port-5500=============================== -->
+  </head>
+  <body>
+    <div class="container" id="printPdf">
+      <form action="form_data.html" id="printJS-form" target="_blank">
+        <table class="table-1">
+          <tr>
+            <th style="border: none">
+              <div class="heading">
+                <h1 style="color: #fff">
+                  Bajaj Allianz General Insurance Company
+                </h1>
+                <img src="./images/bajajlogo.png" alt="bajajlogo" />
+              </div>
+            </th>
+          </tr>
+        </table>
+        <table class="table-2">
+          <tr>
+            <td colspan="2" style="border: none">
+              <div class="table-3-heading">
+                <h1 style="color: #fff">
+                  QUOTATION WORKSHEET FOR Auto Secure -
+                  <select name="" id="quotatuionWorksheet">
+                    <option value="Private Car Policy">
+                      Private Car Policy
+                    </option>
+                    <option value="Passenger Carrying Vehicle Policy">
+                      Passenger Carrying Vehicle Policy
+                    </option>
+                    <option value="Goods Carrying Vehicle Policy">
+                      Goods Carrying Vehicle Policy
+                    </option>
+                  </select>
+                </h1>
+              </div>
+            </td>
+          </tr>
+          <hr />
+          <tr>
+            <td>
+              <b>Customer Name <span class="dot">:</span></b
+              ><span class="number"
+                ><input type="text" id="CustomerName"
+              /></span>
+            </td>
+            <td>
+              <b>Quote Date <span class="dot">:</span></b
+              ><span class="number"><input type="text" id="QuoteDate" /></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Vehicle Number <span class="dot">:</span></b
+              ><span class="number"
+                ><input type="text" id="ProducerContact"
+              /></span>
+            </td>
+            <td>
+              <b>Policy Plan <span class="dot">:</span></b
+              ><span class="number" style="left: 38%; top: 28%"
+                ><select name="" id="PolicyPlan" style="width: 100%">
+                  <option value="Package (1 Year OD + 1 Year TP)">
+                    Package (1 Year OD + 1 Year TP)
+                  </option>
+                  <option value="SAOD (1 Year OD)">SAOD (1 Year OD)</option>
+                  <option value="Liability Only (1 Year TP)">
+                    Liability Only (1 Year TP)
+                  </option>
+                  <option value="Bundle (1 Year OD + 3 Year TP)">
+                    Bundle (1 Year OD + 3 Year TP)
+                  </option>
+                  <option value="Short Term (3 Months)">
+                    Short Term (3 Months)
+                  </option>
+                </select></span
+              >
+            </td>
+          </tr>
+        </table>
+        <table class="table-3">
+          <tr>
+            <th>Make</th>
+            <th>Model & Variant</th>
+            <th>RTO Location</th>
+            <th>Mfg year</th>
+            <th>CC/KW/GVW</th>
+            <th>Seating Capacity</th>
+            <th>Fuel Type</th>
+          </tr>
+          <tr>
+            <td><input type="text" id="modelNumber" /></td>
+            <td><input type="text" id="rtoLocatio" /></td>
+            <td><input type="text" id="mfgYear" /></td>
+            <td><input type="text" id="registrationDate" /></td>
+            <td><input type="text" id="cubicCapacity" /></td>
+            <td><input type="text" id="seatingCapacity" /></td>
+            <td>
+              <select name="" id="fuelType" required>
+                <option selected value="Diesel">Diesel</option>
+                <option value="Petrol">Petrol</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="CNG/LPG">CNG/LPG</option>
+                <option value="Elecrtic">Elecrtic</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>Policy Year</th>
+            <th>IDV of Vehicle</th>
+            <th>IDV of Trailer</th>
+            <th>CNG/LPG Kit</th>
+            <th>IDV of Electrical Accessories</th>
+            <th>IDV of Non-Electrical Accessories</th>
+            <th>Total IDV</th>
+          </tr>
+          <tr>
+            <td><input type="text" id="PolicyYear" /></td>
+            <td><input type="text" id="IdvVehicle" /></td>
+            <td><input type="text" id="IdvTrailer" /></td>
+            <td><input type="text" id="LPGKit" /></td>
+            <td><input type="text" id="ElectricalAccessories" /></td>
+            <td><input type="text" id="NonElectricalAccessories" /></td>
+            <td><input type="text" id="TotalIdv" /></td>
+          </tr>
+        </table>
+        <h1 class="table-4-heading">PREMIUM BREAK UP</h1>
+        <table class="table-4">
+          <tr>
+            <th rowspan="2">Description</th>
+            <td style="text-align: right">
+              <input
+                type="text"
+                placeholder="Enter Your QT Number"
+                id="qtNumber"
+              />
+            </td>
+          </tr>
+          <tr>
+            <!-- <th style="text-align: right">
+              <select name="" id="plan" style="width: 37%" required>
+                <option selected value="Gold">select your plan</option>
+                <option value="Silver">Silver</option>
+                <option value="Gold">Gold</option>
+                <option value="Pearl">Pearl</option>
+                <option value="Pearl Plus">Pearl Plus</option>
+                <option value="Pearl Plus Plus">Pearl Plus Plus</option>
+                <option value="Shappier">Shappier</option>
+                <option value="Shappier Plus">Shappier Plus</option>
+              </select>
+            </th> -->
+          </tr>
+          <!-- ==================== -->
+
+          <!-- ========================== -->
+          <tr>
+            <th colspan="2" class="table-heading-margin">
+              Section - I Own Damage (A)
+            </th>
+          </tr>
+          <tr></tr>
+          <!-- <tr>
+            <td style="text-align: left"><b>Basic OD premium</b></td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <input type="text" id="ODpremium" />
+            </td>
+          </tr> -->
+
+          <tr>
+            <td style="text-align: left">
+              <b>Discounts Under Own Damage Section</b>
+            </td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <b><input type="text" id="Discounts" /></b>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <b
+                >Less: No Claim Bonus @ (
+                <select name="" id="Ncb" required>
+                  <option selected value="0%">0%</option>
+                  <option value="20%">20%</option>
+                  <option value="25%">25%</option>
+                  <option value="35%">35%</option>
+                  <option value="45%">45%</option>
+                  <option value="50%">50%</option>
+                  <option value="55%">55%</option>
+                  <option value="65%">65%</option>
+                </select>
+                )
+              </b>
+            </td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <b><input type="text" id="Noclaimbonus" /></b>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <b>A: TOTAL OWN DAMAGE PREMIUM </b>
+            </td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <input type="text" id="DamagePremium" />
+            </td>
+          </tr>
+          <!-- <tr>
+            <td style="text-align: left">
+              <b
+                >No Claim Bonus @ (
+                <select name="" id="Ncb" required>
+                  <option selected value="0%">0%</option>
+                  <option value="20%">20%</option>
+                  <option value="25%">25%</option>
+                  <option value="35%">35%</option>
+                  <option value="45%">45%</option>
+                  <option value="50%">50%</option>
+                  <option value="55%">55%</option>
+                  <option value="65%">65%</option>
+                </select>
+                )
+              </b>
+            </td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+            </td>
+          </tr> -->
+
+          <!-- <tr>
+            <td style="text-align: left">
+              <b>A: TOTAL OWN DAMAGE PREMIUM </b>
+            </td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <input type="text" id="DamagePremium" />
+            </td>
+          </tr> -->
+          <tr>
+            <th colspan="2" class="table-heading-margin">
+              Section - I ADD ON COVERS (C)
+            </th>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <b
+                >Add : Add-On Cover 
+
+                <!-- (<select name="" id="planTwo" style="width: 20%">
+                  <option selected value="">Select Your Plan</option>
+                  <option value="Silver Plan">Silver Plan</option>
+                  <option value="Gold Plan">Gold Plan</option>
+                  <option value="Pearl Plan">Pearl Plan</option>
+                  <option value="Pearl Plus Plan">Pearl Plus Plan</option>
+                  <option value="Pearl Plus Plus Plan">
+                    Pearl Plus Plus Plan
+                  </option>
+                  <option value="Shappier Plan">Shappier Plan</option>
+                  <option value="Shappier Plus Plan">
+                    Shappier Plus Plan
+                  </option></select>) -->
+                </b>
+            </td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span
+              ><input type="text" id="AddOnCover" />
+              <br />
+            </td>
+          </tr>
+          <!-- <tr>
+            <td style="text-align: left">
+              <b
+                >Add : Emergency transport and hotel expenses (Any One Accident
+                - ₹ 5000, Any One Year- ₹ 10000)
+              </b>
+            </td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <input type="text" id="Emergencytransport" /> <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <b
+                >Add : Key Replacement (Sum Insured : ₹ 25000 Per Occurrence
+                Limit 50% Of SI)
+              </b>
+            </td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <input type="text" id="KeyReplacement" /> <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <b>Add : Loss of personal belongings (Sum Insured : ₹ 10000) </b>
+            </td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span
+              ><input type="text" id="personalbelongings" /> <br />
+            </td>
+          </tr> -->
+          <!-- <tr>
+            <td style="text-align: left">
+              <b>Add : Repair of Glass, Rubber & Plastic Parts</b>
+            </td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <input type="text" id="RepairofGlassTwo" />
+            </td>
+          </tr> -->
+
+          <!-- ============================= -->
+          <!-- <tr>
+            <td style="text-align: left">
+              <b>Add : Engine Secure</b>
+            </td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <input type="text" id="EngineSecure" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <b>Add : Comsumables</b>
+            </td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <input type="text" id="Comsumables" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <b>Add : Return To Invoice</b>
+            </td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <input type="text" id="ReturnToInvoice" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <b>Add : Tyre Secure</b>
+            </td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <input type="text" id="TyreSecure" />
+            </td>
+          </tr> -->
+          <!-- <tr>
+            <td style="text-align: left">
+              <b>Add : Repair of Glass, Rubber & Plastic Parts (TA 08)</b>
+            </td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span> <input type="text" id="RepairofGlassTwo">
+            </td>
+          </tr> -->
+          <!-- <tr>
+            <td style="text-align: left"><b>C: TOTAL ADD ON PREMIUM </b></td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span
+              ><input type="text" id="totalAddOnPremium" />
+            </td>
+          </tr> -->
+          <tr>
+            <th colspan="2" class="table-heading-margin">
+              Section - II Liability (B)
+            </th>
+          </tr>
+          <tr>
+            <td style="text-align: left"><b>Basic TP premium </b></td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <input type="text" id="BasicTPpremium" />
+            </td>
+          </tr>
+          <!-- ======================== -->
+          <tr>
+            <td style="text-align: left"><b>PA to Owner Driver</b></td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <input type="text" id="PAtoOwnerDriver" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left"><b>LL to Paid Driver </b></td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <input type="text" id="LLtoPaidDriver" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <b>LL to Employee Other Than Paid Driver</b>
+            </td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <input type="text" id="LLtoEmployee" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left"><b>Passenger Coverage</b></td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <input type="text" id="PassengerCoverage" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <b>CNG/LPG Kits</b>
+            </td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <input type="text" id="cngLpg" />
+            </td>
+          </tr>
+          <!-- <tr>
+            <td style="text-align: left"><b>B: TOTAL LIABILITY PREMIUM </b></td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <b><input type="text" id="totalLiability" /></b>
+            </td>
+          </tr> -->
+          <tr>
+            <th colspan="2" class="table-heading-margin">Total Premium</th>
+          </tr>
+          <tr>
+            <td style="text-align: left"><b>NET PREMIUM (A+B+C)</b></td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <b><input type="text" id="netPremium" /></b>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left"><b>CGST/SGST/IGST </b></td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <b><input type="text" id="CGSTIGST" /></b>
+            </td>
+          </tr>
+          <!-- <tr>
+            <td style="text-align: left"><b>CGST</b></td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <b><input type="text" id="Cgst" /></b>
+            </td>
+          </tr> -->
+          <tr>
+            <td style="text-align: left"><b>TOTAL PREMIUM</b></td>
+            <td style="text-align: right">
+              <span class="rupees-symbol">₹</span>
+              <b><input type="text" id="totalPremium" /></b>
+            </td>
+          </tr>
+        </table>
+        <table class="table-5">
+          <tr>
+            <th style="text-align: left; border: 1px solid rgb(88, 87, 87)">
+              <div class="label-1">
+                <input
+                  type="checkbox"
+                  value="Depreciation ReImbursement,"
+                  id="DepreciationReImbursement"
+                />
+                <label for="">Zero Depreciation</label>
+              </div>
+              <div class="label-1">
+                <input
+                  type="checkbox"
+                  value="Repair Of Glass,Plastic,Fiber and Rubber,"
+                  id="FiberandRubber"
+                />
+                <label for="">24*7 Spot Assistance</label>
+              </div>
+              <div class="label-1">
+                <input
+                  type="checkbox"
+                  value="Emergency transport and hotel expenses,"
+                  id="Emergencytransport"
+                />
+                <label for="">Engine Protector</label>
+              </div>
+              <div class="label-1">
+                <input
+                  type="checkbox"
+                  value="Key Replacement,"
+                  id="KeyReplacement"
+                />
+                <label for="">Consumable Expenses</label>
+              </div>
+              <div class="label-1">
+                <input
+                  type="checkbox"
+                  value="Loss of personal belongings,"
+                  id="Lossofpersonal"
+                />
+                <label for="">Keys and Locks Replacement Cover</label>
+              </div>
+              <div class="label-1">
+                <input
+                  type="checkbox"
+                  value="Engine Secure,"
+                  id="EngineSecure"
+                />
+                <label for="">Personal Baggage Cover</label>
+              </div>
+              <div class="label-1">
+                <input
+                  type="checkbox"
+                  value="Consumable Expenses,"
+                  id="ConsumableExpenses"
+                />
+                <label for="">Return to Invoice</label>
+              </div>
+              <div class="label-1">
+                <input type="checkbox" value="Tyre Secure," id="TyreSecure" />
+                <label for="">Tyre Safeguard</label>
+              </div>
+              <div class="label-1">
+                <input
+                  type="checkbox"
+                  value="Return To Invoice,"
+                  id="ReturnToInvoice"
+                />
+                <label for="">Conveyance Benefit</label>
+              </div>
+            </th>
+          </tr>
+        </table>
+        <input type="submit" id="click" onclick="passData();" />
+      </form>
+    </div>
+    <script src="./form.js"></script>
+  </body>
+</html>

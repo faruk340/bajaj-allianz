@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  background-color: #0071bb;
+  color: #ffffff;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  font-size: 62.5%;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+h1,
+h2,
+h3 {
+  font-size: 14px;
+}
+
+/* ===========================pdf=============================== */
+.table-heading-margin {
+  padding: 1em 0;
+}
+.table-1 {
+  width: 100%;
+  margin-bottom: 1em;
+  border: none;
+}
+.table-1 .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #0071bb;
+}
+.table-1 .heading h1 {
+  font-size: 3rem;
+}
+.table-1 .heading img {
+  width: 300px;
+  height: 100px;
+}
+table {
+  width: 97%;
+  margin: 1em auto;
+}
+table,
+th,
+td {
+  border-collapse: collapse;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0.5em 0.5em;
+}
+
+.table-2 th {
+  border: none !important;
+}
+.table-2 input {
+  margin: 0.5em 0;
+}
+.table-2 td h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 1.8rem;
+}
+.table-2 td {
+  position: relative;
+  text-align: left;
+}
+.table-2 .number {
+  position: absolute;
+  top: 0;
+  right: 30%;
+  text-align: right;
+}
+.table-2 .dot {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+.table-3 input {
+  width: 80%;
+}
+.table-3-heading {
+  color: #0071bb;
+}
+.table-4-heading {
+  width: 97%;
+  margin: 0 auto;
+  font-size: 2.2rem;
+}
+
+.table-4 {
+  margin-top: 0em;
+}
+.table-4 th {
+  border: 1px solid #ffffff;
+}
+.table-4 td {
+  padding: 0.8em 0.5em;
+  position: relative;
+  border: 1px solid #ffffff;
+}
+.table-4 .rupees-symbol {
+  position: absolute;
+  top: 28%;
+  left: 20%;
+  text-align: left;
+}
+.table-5 .label-1 {
+  padding-bottom: 0.5em;
+}
+.table-5 .label-1 input[type="checkbox"] {
+  padding-right: 5em;
+}
+input {
+  border: 1px solid rgb(102, 100, 100);
+  padding: 0.2em;
+  text-transform: capitalize;
+}
+
+input[type="submit"] {
+  width: 120px;
+  height: 30px;
+  margin-left: 50%;
+  margin-bottom: 2em;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+input[type="submit"]:hover {
+  background-color: #0071bb;
+}
+textarea {
+  margin-top: 0.8em;
+  width: 70%;
+  height: 30px;
+}
+button {
+  text-align: center;
+  width: 10%;
+  margin-left: 50%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.btn-container {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 9px;
+  }
+  .table-1 .heading h1 {
+    order: 2;
+    font-size: 2.2rem;
+  }
+  .table-1 .heading img {
+    order: 1;
+    width: 150px;
+    height: 60px;
+  }
+  .table-4 .rupees-symbol {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    text-align: left;
+  }
+  .table-2 .dot {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+  }
+  table input {
+    width: 60%;
+  }
+}

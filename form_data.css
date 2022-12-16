@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  font-size: 62.5%;
+  margin: 0 auto;
+  z-index: -1;
+}
+.border-color {
+  position: relative;
+  width: 97%;
+  margin: 2em auto;
+  border: 1px solid #0071bb;
+  border-radius: 15px;
+  padding: 1em;
+}
+.border-color::before {
+  position: absolute;
+  background-image: url("./images/bajaj_transparent_hand_left_corner_2.png");
+  background-size: 50px 60px;
+  display: inline-block;
+  width: 50px;
+  height: 60px;
+  content: "";
+  top: -1%;
+  left: -1%;
+  z-index: 99999;
+  transform: rotate(-10deg);
+}
+.border-color::after {
+  position: absolute;
+  background-image: url("./images/bajaj_transparent_hand_right_corner.png");
+  background-size: 50px 60px;
+  display: inline-block;
+  width: 50px;
+  height: 60px;
+  content: "";
+  bottom: -0.5%;
+  right: -1%;
+  z-index: 99999;
+  transform: rotate(5deg);
+}
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+h1,
+h2,
+h3 {
+  font-size: 14px;
+}
+body {
+  position: relative;
+}
+/* .reveal_left {
+  position: relative;
+  transform: translateX();
+  opacity: 0;
+  transition: 1s all ease;
+} */
+
+/* ==================================awards============================= */
+
+.awards_section {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+/* .awards_section .award_img {
+  border: 1px solid red;
+} */
+.awards_section .award_img img {
+  width: 70px;
+  height: 70px;
+}
+.awards_section .award_content h1 {
+  font-size: 2.2rem;
+}
+/* ============================================================================ */
+.pdf-header {
+  padding-left: 50%;
+  padding-top: 1%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* transform: translateY(-100%); */
+  width: 100%;
+  height: 60px;
+  background-color: rgb(0, 0, 0);
+  opacity: 1;
+  z-index: 9;
+  /* animation: 1s ease-out 0s 1 slideDown; */
+}
+.para-header {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pdf-header i {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 0.6em;
+  border-radius: 50%;
+  margin: 0 1em;
+  cursor: pointer;
+  opacity: 1 !important;
+  transition: all 0.3s;
+}
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 0.5;
+}
+.pdf-header i:hover {
+  background-color: rgb(46, 45, 45);
+}
+
+/* ===========================pdf=============================== */
+.table-heading-margin {
+  padding: 1em 0;
+}
+
+.pdf-header-img {
+  color: #0071bb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 97%;
+  margin: 3em auto;
+  padding: 0 2em;
+  border: 2px solid #0071bb;
+  -webkit-print-color-adjust: exact;
+  border-radius: 25px;
+}
+
+/* .pdf-header-img .hdfc {
+  border: 1px solid red;
+} */
+.pdf-header-img .hdfc h1 {
+  font-size: 4rem;
+  color: #0071bb;
+}
+.pdf-header-img .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pdf-header-img .logo img {
+  width: 250px;
+  height: 150px;
+}
+.content {
+  width: 97%;
+  margin: 0 auto;
+}
+.content h1 {
+  font-size: 1.8rem;
+  padding: 0.5em 0;
+}
+.content .quot {
+  padding: 0.6em 0;
+}
+table {
+  width: 97%;
+  margin: 1em auto;
+}
+table,
+th,
+td {
+  border-collapse: collapse;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0.5em 0.5em;
+  border: 1px solid #0071bb;
+}
+
+.table-2 th {
+  border: none !important;
+}
+.table-2 .table-2-width {
+  width: 50%;
+}
+.table-2 td h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 1.8rem;
+}
+.table-2 td {
+  position: relative;
+  text-align: left;
+}
+.table-2 .number {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  text-align: left;
+}
+.table-2 .dot {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+.table-3-heading {
+  width: 100%;
+  color: #264a9f;
+}
+.table-4-heading {
+  width: 97%;
+  margin: 0 auto;
+  font-size: 2.2rem;
+}
+
+.table-4 {
+  margin-top: 0em;
+}
+
+.table-4 td {
+  width: 85%;
+  padding: 0.8em 0.5em;
+  position: relative;
+  border: 1px solid #0071bb;
+}
+.table-4 .rupees-symbol {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  text-align: left;
+}
+input {
+  border: 1px solid rgb(102, 100, 100);
+  padding: 0.2em;
+  text-transform: capitalize;
+}
+
+input[type="text"] {
+  text-align: center;
+}
+
+textarea {
+  margin-top: 0.8em;
+  width: 70%;
+  height: 30px;
+}
+button {
+  text-align: center;
+  width: 10%;
+  margin-left: 50%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.btn-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.table-6 th {
+  text-align: left;
+}
+.table-6-heading {
+  width: 97%;
+  margin: 0 auto;
+  padding-top: 0.8em;
+  font-size: 1.6rem;
+}
+.table-7 {
+  margin: 3.5em auto;
+  display: flex;
+  justify-content: center;
+  width: 97%;
+  align-items: center;
+}
+.table-7 h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.table-7 img {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+}
+.table-7 .hand-symbol {
+  padding: 0 1em;
+}
+.table-7 .hand-symbol img {
+  width: 50px;
+  height: 50px;
+  color: #264a9f;
+  animation: colorany 0.5s infinite ease-in-out;
+}
+.logo {
+  height: 100%;
+}
+.logo img {
+  padding: 5em 3em 3em 3em;
+  width: 140px;
+  height: 120px;
+}
+@keyframes colorany {
+  0% {
+    color: #264a9f;
+  }
+  100% {
+    color: #0071bb;
+  }
+}
+
+/* ===========================================why-bajaj-section-==================================== */
+.why_bajaj_header {
+  margin-top: 5em;
+  width: 100%;
+  text-align: center;
+}
+.why_bajaj_header h1 {
+  font-size: 3.5rem;
+  color: #0071bb;
+}
+.why_bajaj_section {
+  margin: 5em 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.why_bajaj_section .why_bajaj_box {
+  text-align: center;
+  width: 23%;
+}
+.why_bajaj_section .why_bajaj_box .why_bajaj_img img {
+  width: 80px;
+  height: 80px;
+}
+.why_bajaj_section .why_bajaj_box .why_bajaj_content p {
+  padding-top: 0.5em;
+}
+/* ===============================.award_content======================= */
+
+.awards_content {
+  width: 97%;
+  margin: 6em auto;
+  border: 1px solid #0071bb;
+  border-radius: 25px;
+}
+.awards_content h1 {
+  color: #0071bb;
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 0.5em 0;
+}
+.awards_content p {
+  padding: 1em;
+}
+
+/* =====================================================bajaj_map============================== */
+.bajaj_map_section{
+  margin-top: -5em;
+  width: 100%;
+  position: relative;
+  /* margin-bottom: 5em; */
+}
+.bajaj_map_section .map_img img{
+  position: relative;
+  width: 100%;
+  height: 400PX;
+}
+.bajaj_map_section .map_img{
+  position: relative;
+  width: 100%;
+}
+.bajaj_map_section .map_img .bajaj_map_btn{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 300px;
+  height: 50px;
+  transform: translate(-50%,-50%);
+  border-radius: 25px;
+  border: 1px solid #fff;
+}
+.bajaj_map_section .map_img .bajaj_map_btn a{
+  font-size: 2.2rem;
+  color: #0071bb;
+}
+@media print {
+  html {
+    font-size: 9px;
+  }
+  .table-1 .heading h1 {
+    order: 2;
+    font-size: 2.2rem;
+  }
+  .table-1 .heading img {
+    order: 1;
+    width: 150px;
+    height: 120px;
+  }
+  .table-4 .rupees-symbol {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    text-align: left;
+  }
+  .table-2 .dot {
+    position: absolute;
+    top: 25%;
+    left: 37%;
+  }
+  .table-2 .table-2-width {
+    width: 45%;
+  }
+  table input {
+    width: 60%;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 9px;
+  }
+  .table-1 .heading h1 {
+    order: 2;
+    font-size: 2.2rem;
+  }
+  .table-1 .heading img {
+    order: 1;
+    width: 150px;
+    height: 120px;
+  }
+  .table-4 .rupees-symbol {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    text-align: left;
+  }
+  .table-2 .dot {
+    position: absolute;
+    top: 25%;
+    left: 37%;
+  }
+  .table-2 .table-2-width {
+    width: 45%;
+  }
+  table input {
+    width: 60%;
+  }
+  .pdf-header-img .img img {
+    width: 500px;
+    height: 250px;
+  }
+  .awards_section {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+  }
+  .why_bajaj_header {
+    margin-top: 30em;
+  }
+  .awards_content {
+    margin: 5 auto;
+  }
+  /* .bajaj_map_section{
+    margin-top: -7em;
+    padding-bottom: 2em;
+  }
+  .bajaj_map_section .map_img img{
+    height: 200PX;
+  } */
+}
